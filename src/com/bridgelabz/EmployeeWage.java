@@ -1,6 +1,9 @@
 package com.bridgelabz;
 
 public class EmployeeWage {
+    public static final int WAGE_PER_HOUR = 20;
+    public static final int FULL_DAY_HOUR = 8;
+
     public static void main(String[] args) {
         System.out.println("Welcome to employee wage computation program");
         double randomNumber = Math.random() * 2;
@@ -13,5 +16,8 @@ public class EmployeeWage {
         else {
             System.out.println("Employee is absent");
         }
+
+        int dailyEmpWage = WAGE_PER_HOUR * FULL_DAY_HOUR;
+        System.out.println("Daily Employee Wage is "+ dailyEmpWage);
     }
 }
