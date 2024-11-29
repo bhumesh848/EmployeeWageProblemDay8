@@ -6,6 +6,8 @@ public class EmployeeWage {
     public static final int WAGE_PER_HOUR = 20;
     public static final int FULL_DAY_HOUR = 8;
     public static final int PART_TIME_HOUR = 8;
+    public static final int WORKING_DAYS_PER_MONTH = 20;
+
 
     public static void main(String[] args) {
         System.out.println("Welcome to employee wage computation program");
@@ -44,5 +46,7 @@ public class EmployeeWage {
                 System.out.println("Invalid Input , press 1 or 2 .");
         }
 
+        int wageForMonth = WORKING_DAYS_PER_MONTH * dailyEmpWage;
+        System.out.println("Wages for a month would be " + wageForMonth);
     }
 }
